@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Project 3- To the River!</title>
+
+    <link rel="stylesheet" href="css/test.css" />
+  </head>
+
+  <body>
+    <section class="banner">
+      <div class="container">
+        <h1>To The River!</h1>
+        <h3>The Montreal River Access App</h3>
+      </div>
+    </section>
+
+    <!--<main></main>-->
+
+    <section class="activity">
+      <div class="container">
+        <h2>What would you like to do today?</h2>
+        <h5>Choose an activity:</h5>
+
+        <select id="activitySelect">
+          <!-- default option Swim"/"East Beach" selected -->
+          <option value="swim">Go for a swim</option>
+          <option value="boat_ramp">Launch a boat</option>
+          <option value="non_moto_boats">Play water sports</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="location">
+      <div class="container">
+        <div class="dropdwn">
+          <!--<h2>Locations for chosen activity:</h2>-->
+          <h5>Choose a location for this activity:</h5>
+
+          <select id="locationSelect">
+            <!-- populated using JS -->
+          </select>
+
+          <button id="fetchLocationsButton">Show Location Details</button>
+        </div>
+        <div id="result">
+          <!-- results here -->
+        </div>
+      </div>
+    </section>
+
+    <section class="improve">
+      <a class="btn" href="../pro2_db/pro3index.html"
+        >Help Us Improve The App!</a
+      >
+    </section>
+
+    <script src="js/app.js"></script>
+    <script src="js/weatherapi.js"></script>
+  </body>
+</html>

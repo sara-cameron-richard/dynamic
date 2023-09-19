@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #6930c3;
+    background-image: linear-gradient(#80ffdb, #48bfe3, #6930c3);
+    font-family: 'Poppins', sans-serif;
+    color: #3d3c3c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;;
+}
+
+.banner {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    max-width: 95%;
+    /*border: 2px solid red;*/
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    color: #7400b8;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.9);
+}
+
+.banner h3 {
+    font-size: 1.2rem;
+    color: #6930c3;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.9);
+}
+
+.banner .container{
+    box-shadow: none;
+}
+
+h2{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    padding: 10px;
+    /*margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.75);*/
+    text-align: center;
+    display: block;
+}
+
+
+.dropdwn{
+    margin-bottom: 10px;
+}
+
+
+/*weather
+main {
+    max-width: 800px;
+    width: 90%;    
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    display: block;
+}
+
+ 
+main h3 {
+    font-size: 0;
+}*/
+
+/*label {
+    font-weight: bold;
+    align-self: center;
+}*/
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 5px 0;
+    color: #000000;
+}
+
+/* Style navigation links 
+ul li a {
+    text-decoration: none;
+    color: #6930c3;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    background-color: #80ffdb;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}*/
+
+
+.improve .btn {
+    display: inline-block;
+    font-size: 16px;
+    color: #80ffdb;
+    text-decoration: none;
+    border: 1px solid #80ffdb;
+    border-radius: 10px;
+    background-color: #6930c3;
+    padding: 5px 10px;
+    transition: .5s;
+        
+}
+
+.improve .btn:hover {
+    background-color: #80ffdb;
+    color: #6930c3;
+}
+
+
+
+
