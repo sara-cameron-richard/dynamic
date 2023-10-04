@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+i {
+    font-size: 18px;
+    color: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: white;
+}
+
+.container {
+    max-width: 700px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header & nav */
+header {
+    width: 100vw;
+    height: 80px;
+    background: #3AB0FF;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 1rem 0;
+}
+
+.blog-header-logo{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    display: inline-flex;
+    gap: 40px;
+}
+
+.nav-list a {
+    padding: 6px 25px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.nav-list a i{
+    color: #3AB0FF;
+}
+
+main {
+    background-image: url('../images/improve-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 3rem 1.2rem 5rem 1.2rem;
+}
+
+#intro {
+    text-align: center;
+    margin: 80px 0 20px;
+}
+
+#intro h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #337CCF;
+}
+
+p {
+    font-size: 1rem;
+    /* font-weight: 300; */
+    color: #0C356A;
+    line-height: 2rem;
+    margin: 15px 0;
+}
+
+form a,
+form a:link,
+form a:visited {
+    background-color: rgb(66 162 236 / 0.95);
+    color: rgb(240 240 240 / 0.95);
+}
+
+form a:hover,
+form a:focus {
+    background-color: rgb(16 16 16 / 0.95);
+    color: rgb(66 162 236 / 0.95);
+}
+
+form fieldset {
+    padding: 1.5rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+form fieldset legend {
+    font-family: 'Coustard', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+form label {
+    margin-bottom: 15px;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #590004;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#submit-btn {
+    padding: 10px 30px;
+    border-radius: 6px;
+    background: #337CCF;
+    border: none;
+    color: white;
+}
+
+#submit-btn:hover {
+    background: #40F8FF;
+    color: #337CCF;
+}
+
+@media only screen and (max-width: 580px) {
+
+    input,
+    select,
+    textarea {
+        margin-bottom: 0;
+    }
+
+}

@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #6930c3;
+    background-image: linear-gradient(#80ffdb, #48bfe3, #6930c3);
+    font-family: Poppins, sans-serif;
+    color: #3d3c3c;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    padding: 10px;
+    height: 100%;
+    text-align: center;
+}
+
+.banner {
+    /*background-color: #f0f0f0;*/
+    text-align: center;
+    padding: 5px;
+}
+
+.banner h1 {
+    font-size: 2rem;
+    color: #7400b8;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.9);
+}
+
+h3{
+    font-size: 1rem;
+    color: #48086d;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #7400b8;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.9);
+}
+
+.op_text{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.activity {
+    text-align: center;
+    /*padding: 5px;*/
+}
+
+.location {
+    text-align: center;
+    min-height: 450px;
+    /*padding: 5px;*/
+}
+
+.dropdwn {
+    margin-bottom: 10px;
+}
+
+button,
+select {
+    padding: 5px;
+    margin: 5px;
+}
+
+#result{
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 5px 0;
+    color: #000000;
+}
+
+#thumbsUpButton,
+#thumbsDownButton {
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #80ffdb;
+    margin-bottom: 1rem;
+}
+
+
+.improve {
+    text-align: center;
+    padding: 10px;
+}
+
+.improve .btn {
+    /*display: inline-block;*/
+    font-size: 16px;
+    color: #80ffdb;
+    text-decoration: none;
+    border: 1px solid #80ffdb;
+    border-radius: 10px;
+    background-color: #6930c3;
+    padding: 5px 10px;
+    transition: .5s;
+
+}
+
+.improve .btn:hover {
+    background-color: #80ffdb;
+    color: #6930c3;
+}
+

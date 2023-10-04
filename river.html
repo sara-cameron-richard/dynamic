@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project 4 - To the River!</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;300;400;500&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<!-- slick slider css cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" type="text/css" href="css/test2.css">
+
+</head>
+<body>
+
+	<div class="popup-wrapper">
+		<div class="btn-close"><i class="fa-solid fa-xmark"></i></div>
+
+		<div class="popup-content">
+			<h3>Go to the Montreal River!</h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/dZAK7fD5HXA?si=PBjW9lW1x6SkJsBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+		</div>
+	</div>
+
+	<section class="sm-thch">
+		<div class="container">
+			 <header class="border-bottom lh-1 py-3">
+			    <div class="row flex-nowrap justify-content-between align-items-center">
+			      <div class="col-4">
+			        <a class="blog-header-logo text-body-secondary text-decoration-none fw-bold fs-4" href="#">NovaMoon Tech</a>
+			      </div>
+			      <div class="col-4 d-flex justify-content-end align-items-center">
+			        <a class="btn-play link-secondary fs-4" href="#" aria-label="Search"><i class="fa-solid fa-magnifying-glass-location"></i></a>
+			      </div>
+			    </div>
+			</header>
+
+		  	<div class="nav-scroller py-1 mb-3 border-bottom">
+			    <nav class="nav nav-underline justify-content-around">
+			      <a class="nav-item nav-link link-body-emphasis" href="https://www.theweathernetwork.com/ca/weather/quebec/montreal" target="_blank">Weather</a>
+			      <a class="nav-item nav-link link-body-emphasis" href="#activity_link">Activity</a>
+			      <a class="nav-item nav-link link-body-emphasis" href="#location_link">Location</a>
+			      <a class="nav-item nav-link link-body-emphasis" href="#opinion_link">Opinion</a>
+			    </nav>
+		  	</div>
+	    </div>
+	</section>
+
+	<section class="banner">
+		<div class="container">
+			<div class="banner-bg pt-3 p-md-5 mb-2">
+			    <div class="col-lg-6 px-0">
+			      <h1 class="display-4">To the <span>River!<span></h1>
+			      <h3 class="lead my-3 fw-bold">The Montreal River Access App</h3>
+			    </div>
+			</div>
+		</div>
+	</section>
+
+	<section class="info py-2">
+		<div class="container">
+	        <div class="items">
+				<div class="row g-1 g-sm-1 g-lg-2">
+					<div class="col-sm-5 col-md-6">
+						<div class="activity bg-white p-4 h-100 shadow-sm" id="activity_link">
+							<h3 class="text-white fs-5">Activity</h3>
+							<h4>What would you like to do?</h4>
+							<label class="drpdwn_activity mb-1">Choose an Activity:</label>
+							<select id="activitySelect" class="form-select form-select-md">
+					              <!-- default option Swim"/"East Beach" selected -->
+					              <option value="swim">Go for a Swim</option>
+					              <option value="boat_ramp">Launch a Boat</option>
+					              <option value="non_moto_boats">Play Water Sports</option>
+				            </select>
+						</div>
+					</div>
+					<div class="col-sm-5 col-md-6">
+						<div class="location bg-white p-4 h-100 shadow-sm" id="location_link">
+							<h3 class="text-white fs-5">Location</h3>
+							<h4>Where would you like to go?</h4>
+							<label class="drpdwn_location mb-1">Choose a Location for this Activity:</label>
+							<select id="locationSelect" class="form-select form-select-md">
+					              <!-- default option Swim"/"East Beach" selected -->
+
+				            </select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		    <div class="accordion accordion-flush" id="">
+			    	<h2 class="accordion-header mt-2">
+				    	<div class="fetch-btn">
+					      	<button id="fetchLocationsButton" class="accordion-button text-white fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #6499E9;">
+					        Show Location Details</button>
+				      	</div>
+			    	</h2>
+			    	<div id="collapseOne" class="accordion-collapse collapse show" >
+			      	<div id="result" class="accordion-body" style="background-color: #F9F3CC;">
+			      		<!-- results here -->
+			      	</div>
+			    </div>
+			</div>
+		</div>		
+	</section>
+
+	<section class="opinions py-5">
+		<div class="container">
+	        <div class="items">
+				<div class="row g-1 g-sm-1 g-lg-2">
+					<div class="col-sm-5 col-md-6">
+						<div class="opinion-location p-4 h-100 shadow-sm" id="opinion_link">
+							<h2 class="op_text fs-5">Give Your Opinion on a River Location:</h2>
+							<label class="drpdwn_opinion mb-2">Choose a Location:</label>
+							<select id="opinionLocationSelect" class="form-select form-select-md" >
+
+				            </select>
+
+				            <!-- Thumbs-up/thumbs-down buttons -->
+				            <div class="thumbs">
+				          		<button id="thumbsUpButton" class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-1"><i class="fa-solid fa-thumbs-up fa-2xl"></i></button>
+				          		<button id="thumbsDownButton" class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-1"><i class="fa-solid fa-thumbs-down fa-flip-horizontal fa-2xl"></i></button>
+				          	</div>
+						</div>
+					</div>
+					<div class="col-sm-5 col-md-6">
+						<div class="opinion-improve p-4 h-100 shadow-sm">
+							<h2 class="op_text fs-5">Help Us Improve The App!</h2>
+							<button class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-1"><a class="btn" href="improve.html"><i class="fa-solid fa-pen-to-square"></i></a></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+
+
+	<!-- jquery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- cdn slick -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Bootstrap js cdn -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+	<script src="js/app.js" defer></script>
+    <script src="js/weatherapi.js" defer></script>
+
+	<script>
+
+		$('.popup-wrapper').hide();
+
+		$('.btn-play').on('click', function(){
+			$('.popup-wrapper').show('slow');
+			$('body').addClass('popup-is-open');
+		});
+
+		$('.btn-close').on('click', function(){
+			$('.popup-wrapper').hide('slow');
+			$('body').removeClass('popup-is-open');
+		});
+
+	</script>
+
+</body>
+</html>
